@@ -1,3 +1,5 @@
+hai
+
 <?php
 
 use Illuminate\Contracts\Http\Kernel;
