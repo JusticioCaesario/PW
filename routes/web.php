@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/users',[UserController::class,'index'])->name('users.index');
+Route::get('/test',[UserController::class,'test']);
+
+//kalender routes
+Route::get('calendar',[CalendarController::class, 'index'])->name('calendar.index');
