@@ -18,6 +18,9 @@ class User extends Authenticatable
      *
      * @var string[]
      */
+
+     protected $table ='users';
+     protected $primaryKey ='id';
     protected $fillable = [
         'name',
         'email',
@@ -52,4 +55,5 @@ class User extends Authenticatable
     {
         $query->where('votes', '>', 10);
     }
+    
 }
