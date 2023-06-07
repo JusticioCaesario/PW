@@ -17,7 +17,8 @@ class CreateFormsTable extends Migration
             $table->id();
             $table->string('namaevent');
             $table->text('deskripsi');
-            $table->text('tglevent');
+            $table->dateTime('start_date');
+            $table->dateTime('end_date');
             $table->timestamps();
         });
     }

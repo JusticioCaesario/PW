@@ -60,7 +60,8 @@ Route::post('/create',function(){
     form::create([
         'namaevent' => request('namaevent'),
         'deskripsi' => request('deskripsi'),
-        'tglevent' => request('tglevent')
+        'start_date' => request('start_date'),
+        'end_date' => request('end_date')
     ]);
     return redirect('/create');    
 });
