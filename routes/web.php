@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RegisterController;
+use App\Models\form;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,3 +50,16 @@ Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('acti
 // Register
 Route::get('register', [RegisterController::class, 'register'])->name('register');
 Route::post('register/action', [RegisterController::class, 'actionregister'])->name('actionregister');
+
+//formajuan
+Route::get('/create',function(){
+    return view('create');
+});
+
+Route::post('/create',function(){
+    $form = new Form();
+    $form -> namaevent = request('namaevent');
+    $form -> deskripsi = request('deskripsi');
+    $form -> tglevent = request('tglevent');
+    $form -> save();    
+});
