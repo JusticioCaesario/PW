@@ -57,9 +57,10 @@ Route::get('/create',function(){
 });
 
 Route::post('/create',function(){
-    $form = new Form();
-    $form -> namaevent = request('namaevent');
-    $form -> deskripsi = request('deskripsi');
-    $form -> tglevent = request('tglevent');
-    $form -> save();    
+    form::create([
+        'namaevent' => request('namaevent'),
+        'deskripsi' => request('deskripsi'),
+        'tglevent' => request('tglevent')
+    ]);
+    return redirect('/create');    
 });
