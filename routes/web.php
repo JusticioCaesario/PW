@@ -22,7 +22,6 @@ use App\Http\Controllers\RegisterController;
 
 //View Layout
 Route::get('/layout', [LayoutController::class, 'index']);
-
 Route::get('/users', [UserController::class, 'index'])->name('users.index');
 Route::get('/test', [UserController::class, 'test']);
 
