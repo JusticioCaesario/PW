@@ -2,7 +2,7 @@
 
     <div style="color: red">
         <ul>
-            @foreach($errors as $all as $error)
+            @foreach($errors->all as $error)
                 <li>{{ $error}}</li>
             @endforeach
     
@@ -43,19 +43,11 @@
             </div>
             <div class="form-group">
                 <label for="tglevent">Tanggal Mulai Event :</label>
-<<<<<<< Updated upstream
-                <input type="datetime-local" name="start_date" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="tglevent">Tanggal Akhir Event :</label>
-                <input type="datetime-local" name="end_date" class="form-control">
-=======
                 <input type="date" name="start_date" class="form-control">
             </div>
             <div class="form-group">
                 <label for="tglevent">Tanggal Akhir Event :</label>
                 <input type="date" name="end_date" class="form-control">
->>>>>>> Stashed changes
             </div>
             <button type="submit" class="btn btn-primary">Ajukan</button>
         </form>
