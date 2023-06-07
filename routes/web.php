@@ -58,16 +58,12 @@ Route::get('/create',function(){
 });
 
 Route::post('/create',function(){
-    $validator= Validator::make(request()->all(),[
+    Validator::make(request()->all(),[
         'namaevent'=>'required',
         'deskripsi'=>'required',
         'start_date'=>'required',
         'end_date'=>'required'
-
-    ]);
-    if($validator->falls()){
-        return redirect()->back()->withErrors($validator);
-    }
+    ])->validate();
     form::create([
         'namaevent' => request('namaevent'),
         'deskripsi' => request('deskripsi'),
