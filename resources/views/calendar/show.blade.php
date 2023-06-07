@@ -40,8 +40,8 @@
                 },
                 events: booking,
                 displayEventTime: false,
-                selectable: true,
-                selectHelper: true,
+                selectable: false,
+                selectHelper: false,
                 select: function(start, end, allDays) {
                     $('#bookingModal').modal('toggle');
 
@@ -97,29 +97,8 @@
                                 console.log(error)
                             },
                         });
-                },
-                eventClick: function(event){
-                    var id = event.id;
-
-                    if(confirm('Are you sure want to remove it')){
-                        $.ajax({
-                            url:"{{ route('calendar.destroy', '') }}" +'/'+ id,
-                            type:"DELETE",
-                            dataType:'json',
-                            success:function(response)
-                            {
-                                $('#calendar').fullCalendar('removeEvents', response);
-                                // swal("Good job!", "Event Deleted!", "success");
-                            },
-                            error:function(error)
-                            {
-                                console.log(error)
-                            },
-                        });
-                    }
-
-                },
-                
+                }
+                             
 
 
 

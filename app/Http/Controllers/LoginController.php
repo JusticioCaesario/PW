@@ -26,7 +26,7 @@ class LoginController extends Controller
         ]);
 
         if (Auth::Attempt($data)) {
-            return redirect('calendar/index');
+            return redirect('calendar/show');
         }else{
             Session::flash('error', 'Email atau Password Salah');
             return redirect('/');
