@@ -28,11 +28,11 @@
             </div>
             <div class="form-group">
                 <label for="tglevent">Tanggal Mulai Event :</label>
-                <input type="dateTime" name="start_date" class="form-control">
+                <input type="datetime-local" name="start_date" class="form-control">
             </div>
             <div class="form-group">
                 <label for="tglevent">Tanggal Akhir Event :</label>
-                <input type="dateTime" name="end_date" class="form-control">
+                <input type="datetime-local" name="end_date" class="form-control">
             </div>
             <button type="submit" class="btn btn-primary">Ajukan</button>
         </form>
