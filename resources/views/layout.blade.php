@@ -22,7 +22,7 @@
   <!-- Navbar Area Start -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark @if(auth()->check()) bg-dark @else bg-info @endif">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Kalangan</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
            <span class="navbar-toggler-icon"></span>
        </button>
@@ -38,7 +38,7 @@
             <a class="nav-link" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact">Contact Us</a>
+            <a class="nav-link" href="#">Contact Us</a>
           </li>
         </ul>
 
@@ -74,7 +74,11 @@
   <!--for adding your content-->
 
   <!-- Add Footer Area Start -->
-Footer 
+  
+  <div class="card-header">
+    2023
+  </div>
+
 
   <!-- Add Footer Area End -->
 
