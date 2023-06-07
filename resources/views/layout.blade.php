@@ -53,13 +53,13 @@
           @endguest @auth
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>
-              {{Auth::user()->first_name}}
+              {{Auth::user()->role}}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="{{url('dashboard')}}"><i class="far fa-id-badge"></i></i> Profile</a>
               <a class="dropdown-item" href="{{url('contactm')}}"><i class="fas fa-envelope-open-text"></i> Messages</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="{{url('logout')}}"><i class="fas fa-sign-out-alt"></i> Logout</a>
+              <a class="dropdown-item" href="{{route('actionlogout')}}"><i class="fas fa-sign-out-alt"></i> Logout</a>
             </div>
           </li>
           @endauth

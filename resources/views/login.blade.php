@@ -28,6 +28,8 @@
                 <div class="form-group">
                     <label>Password</label>
                     <input type="password" name="password" class="form-control" placeholder="Password" required="">
+            
+                          
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Log In</button>
                 <hr>
