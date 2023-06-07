@@ -22,15 +22,11 @@
             @csrf
                 <div class="form-group">
                     <label><i class="fa fa-user"></i> Username</label>
-                    <input type="text" name="username" class="form-control" placeholder="Username" required="">
+                    <input type="text" name="name" class="form-control" placeholder="Nama" required="">
                 </div>
                 <div class="form-group">
                     <label><i class="fa fa-key"></i> Password</label>
                     <input type="password" name="password" class="form-control" placeholder="Password" required="">
-                </div>
-                <div class="form-group">
-                    <label><i class="fa fa-address-book"></i> Role</label>
-                    <input type="text" name="role" class="form-control" placeholder="Role" required="">
                 </div>
                 <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-user"></i> Register</button>
                 <hr>
