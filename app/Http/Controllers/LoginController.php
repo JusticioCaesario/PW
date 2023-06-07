@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
-use Illuminate\Validation\Validator\validate;
 
 class LoginController extends Controller
 {
@@ -23,6 +22,7 @@ class LoginController extends Controller
         $data = $request->validate([
             'name' => 'required',
             'password' => 'required',
+            'role' => 'required'
         ]);
 
         if (Auth::Attempt($data)) {
