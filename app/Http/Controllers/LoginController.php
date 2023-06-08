@@ -13,7 +13,7 @@ class LoginController extends Controller
     public function login()
     {
         if (Auth::check()) {
-            return redirect('home');
+            return redirect('calendar.show');
         }else{
             return view('login');
         }

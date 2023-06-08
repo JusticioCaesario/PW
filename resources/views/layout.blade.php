@@ -28,9 +28,24 @@
        </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
+          @auth
+          @if(Auth::user()->role === 'Admin')
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{route('calendar.index')}}">Home <span class="sr-only">(current)</span></a>
           </li>
+          @endif
+          @if(Auth::user()->role === 'mahasiswa')
+          <li class="nav-item active">
+            <a class="nav-link" href="{{route('calendar.show')}}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          @endif
+          @endauth
+          @guest
+          <li class="nav-item active">
+            <a class="nav-link" href="{{route('calendar.show')}}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          @endguest
+          
           @auth
           @if(Auth::user()->role === 'mahasiswa')
         <li class="nav-item">
