@@ -21,6 +21,12 @@
             <form action="{{route('actionregister')}}" method="post">
             @csrf
                 <div class="form-group">
+                @if ($errors->has('name'))
+                 <div class="text-center text-danger">
+                {{ $errors->first('name') }}
+                 </div>
+                    @endif
+                    <br>
                     <label><i class="fa fa-user"></i> Username</label>
                     <input type="text" name="name" class="form-control" placeholder="Nama" required="">
                 </div>
