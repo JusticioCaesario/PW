@@ -29,7 +29,7 @@ class LoginController extends Controller
 
         if (Auth::Attempt($data)) {
             $user =Auth::user();
-            if($user->role === 'admin' ) {
+            if($user->role === 'Admin' ) {
             return redirect('calendar/index');
             }else{
             return redirect('calendar/show');
