@@ -36,7 +36,7 @@ class FormController extends Controller
             'end_date' => $request->input('end_date'),
         ]);
 
-        $request->session()->flash('message', 'Event berhasil diajukan!');
+        Session::flash('message', 'Event berhasil diajukan!');
 
         return redirect('/create');
     }
