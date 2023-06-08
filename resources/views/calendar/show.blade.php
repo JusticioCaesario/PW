@@ -1,10 +1,8 @@
-
-
-@extends('layout')
 <!DOCTYPE html>
 <html lang="en">
     
 
+@extends('layout')
 <head>
     
     <meta charset="UTF-8">
@@ -14,6 +12,75 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
+  @section('css')
+  <style>
+    
+    /* Styling for the calendar */
+    .calendar-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Styling for the modal */
+    .modal-dialog {
+      max-width: 400px;
+    }
+
+    /* Styling for the save button */
+    #saveBtn {
+      background-color: #007bff;
+      border-color: #007bff;
+      transition: background-color 0.3s ease;
+    }
+
+    #saveBtn:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    /* Styling for the event dots */
+    .fc-event-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    .fc-event-dot.red {
+      background-color: #ff0000;
+    }
+
+    .fc-event-dot.green {
+      background-color: #00ff00;
+    }
+
+    .fc-event-dot.blue {
+      background-color: #0000ff;
+    }
+
+    /* Styling for the event titles */
+    .fc-event-title {
+      font-weight: bold;
+    }
+
+    /* Styling for the modal */
+    .modal-title {
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    /* Styling for the modal buttons */
+    .modal-footer button {
+      transition: background-color 0.3s ease;
+    }
+
+    .modal-footer button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  @endsection
+
   @section('scripts')
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -97,8 +164,9 @@
                                 console.log(error)
                             },
                         });
-                }
-                             
+                },
+              
+                
 
 
 
@@ -145,7 +213,7 @@
         <div class="row">
             <div class="col-12">
                 <h3 class="text-center mt-5">Kalender Kegiatan Mahasiswa Angkatan 2021</h3>
-                <div class="col-md-11 offset-1 mt-5 mb-5">
+                <div class="col-md-11 offset-1 mt-5 mb-5 calendar-container">
 
                     <div id="calendar">
 
@@ -159,4 +227,3 @@
 </body>
 </html>
 @endsection
-
