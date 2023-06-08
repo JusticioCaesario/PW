@@ -60,3 +60,6 @@ Route::post('register/action', [RegisterController::class, 'actionregister'])->n
 
 Route::get('/create', [FormController::class, 'index'])->name('create');
 Route::post('/create', [FormController::class, 'create'])->name('create');
+
+//Logout
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
