@@ -33,7 +33,8 @@ class RegisterController extends Controller
         ]);
 
         if ($user) {
-            return redirect('/login')->with('message', 'Register Berhasil. Akun Anda sudah aktif. Silakan login menggunakan username dan password.');
+            Session::flash('register_success', 'Anda telah berhasil register. Silakan login menggunakan username dan password yang telah Anda daftarkan.');
+            return redirect('/login');
         } else {
             return redirect('/register')->withInput()->with('error', 'Register Gagal. Silakan coba lagi.');
         }

@@ -19,6 +19,11 @@
                 <b>Oops!</b> {{session('error')}}
             </div>
             @endif
+            @if(session('register_success'))
+            <div class="alert alert-success">
+                {{session('register_success')}}
+                </div>
+                @endif
             <form action="{{ route('actionlogin') }}" method="post">
             @csrf
                 <div class="form-group">
