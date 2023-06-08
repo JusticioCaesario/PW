@@ -11,6 +11,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\FormController;
 use App\Models\form;
 use Illuminate\Support\Facades\Validator;
+use App\Http\Controllers\AjuanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,3 +64,7 @@ Route::post('/create', [FormController::class, 'create'])->name('create');
 
 //Logout
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+//Ajuan
+Route::get('/ajuan', [AjuanController::class, 'index'])->name('ajuan');
+Route::post('/ajuan', [AjuanController::class, 'ajuan'])->name('ajuan');
