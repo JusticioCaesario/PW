@@ -45,7 +45,7 @@
             <a class="nav-link" href="{{route('calendar.show')}}">Home <span class="sr-only">(current)</span></a>
           </li>
           @endguest
-          
+
           @auth
           @if(Auth::user()->role === 'mahasiswa')
         <li class="nav-item">
@@ -78,9 +78,6 @@
               {{Auth::user()->role}}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{url('home')}}"><i class="far fa-id-badge"></i></i> Profile</a>
-              <a class="dropdown-item" href="#"><i class="fas fa-envelope-open-text"></i> Messages</a>
-              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{route('actionlogout')}}"><i class="fas fa-sign-out-alt"></i> Logout</a>
             </div>
           </li>
