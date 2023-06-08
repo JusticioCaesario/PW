@@ -2,11 +2,10 @@
 @extends('layout')
 <html>
 <head>
-    <title>Data Ajuan Angkatan</title>
+    <title>Forms</title>
     @section('css')
     <style>
         body {
-            background-image: url('https://example.com/kitten-background.jpg'); /* Ganti URL dengan URL gambar latar belakang kucing */
             background-color: #f7f3e9;
             font-family: 'Arial', sans-serif;
             color: #614c3d;
@@ -61,19 +60,6 @@
         body, .card, th, td, h2 {
             font-family: 'Just Another Hand', cursive;
         }
-
-        /* Ganti warna teks menjadi putih */
-        body, .card, th, td, h2 {
-            color: #fff;
-        }
-
-        /* Ganti ikon kucing di header */
-        .card h2::before {
-            content: "\f6be";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            margin-right: 10px;
-        }
     </style>
     @endsection
     @section('content')
@@ -108,3 +94,8 @@
             </tbody>
         </table>
     </div>
+    <br><br><br>
+    <br><br><br>
+</body>
+</html>
+@endsection
