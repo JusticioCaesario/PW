@@ -53,6 +53,15 @@
         </li>
         @endif
         @endauth
+
+        @auth
+          @if(Auth::user()->role === 'Admin')
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('ajuan')}}">Ajuan</a>
+        </li>
+        @endif
+        @endauth
+
         </ul>
 
         <ul class="navbar-nav">
