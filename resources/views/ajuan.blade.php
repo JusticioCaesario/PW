@@ -8,7 +8,7 @@
         .card {
             width: 80%;
             margin: 0 auto;
-            padding: 10px;
+            padding: 40px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 3px;
         }
@@ -37,18 +37,21 @@
             background-color: #ebebeb;
         }
 
-        h1 {
+        h2 {
             color: #333333;
             text-align: center;
             margin-top: 20px;
+            font-size:20;
         }
     </style>
     @endsection
     @section('content')
 </head>
 <body>
+    <br>
     <div class="card">
-        <h1>Data Ajuan</h1>
+        <h2>Data Ajuan</h2>
+        <br>
         <table>
             <thead>
                 <tr>
@@ -74,6 +77,8 @@
             </tbody>
         </table>
     </div>
+    <br><br><br>
+    <br><br><br>
 </body>
 </html>
 @endsection

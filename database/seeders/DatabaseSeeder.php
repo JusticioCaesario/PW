@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use App\Models\Ajuan;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -14,10 +15,54 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
-            'name' => 'roy',
-            'password' => Hash::make('roy'),
-            'role' => 'Admin',
+      
+        Ajuan::create([
+            'namaevent' => 'Apa',
+            'deskripsi' => 'Lorem Ipsum',
+            'start_date' => '2023-06-08',
+            'end_date' => '2023-06-08',
+        ]);
+
+        Ajuan::create([
+            'namaevent' => 'Apa',
+            'deskripsi' => 'Lorem Ipsum',
+            'start_date' => '2023-06-08',
+            'end_date' => '2023-06-08',
+        ]);
+
+        Ajuan::create([
+            'namaevent' => 'Apa',
+            'deskripsi' => 'Lorem Ipsum',
+            'start_date' => '2023-06-08',
+            'end_date' => '2023-06-08',
+        ]);
+
+        Ajuan::create([
+            'namaevent' => 'Apa',
+            'deskripsi' => 'Lorem Ipsum',
+            'start_date' => '2023-06-08',
+            'end_date' => '2023-06-08',
+        ]);
+
+        Ajuan::create([
+            'namaevent' => 'Apa',
+            'deskripsi' => 'Lorem Ipsum',
+            'start_date' => '2023-06-08',
+            'end_date' => '2023-06-08',
+        ]);
+
+        Ajuan::create([
+            'namaevent' => 'Apa',
+            'deskripsi' => 'Lorem Ipsum',
+            'start_date' => '2023-06-08',
+            'end_date' => '2023-06-08',
+        ]);
+
+        Ajuan::create([
+            'namaevent' => 'Apa',
+            'deskripsi' => 'Lorem Ipsum',
+            'start_date' => '2023-06-08',
+            'end_date' => '2023-06-08',
         ]);
     }
 }
