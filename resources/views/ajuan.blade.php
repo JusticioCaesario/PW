@@ -7,7 +7,7 @@
     <style>
         body {
             background-color: #f7f3e9;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Sabon', serif; /* Ganti font body menjadi Sabon */
             color: #614c3d;
         }
 
@@ -54,10 +54,11 @@
             font-size: 24px;
             letter-spacing: 1px;
             font-weight: bold;
+            font-family: 'Sabon', serif; /* Ganti font h2 menjadi Sabon */
         }
 
         /* Ganti font menjadi Just Another Hand */
-        body, .card, th, td, h2 {
+        .card, th, td {
             font-family: 'Just Another Hand', cursive;
         }
     </style>
