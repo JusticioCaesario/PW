@@ -32,10 +32,12 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           @auth
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('create')}}">Ajuan</a>
-          </li>
-          @endauth
+          @if(Auth::user()->role === 'mahasiswa')
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('create')}}">Ajuan</a>
+        </li>
+        @endif
+        @endauth
         </ul>
 
         <ul class="navbar-nav">
