@@ -2,46 +2,63 @@
 @extends('layout')
 <html>
 <head>
-    <title>Data Ajuan Angkatan</title>
+    <title>Forms</title>
     @section('css')
     <style>
+        body {
+            background-color: #f7f3e9;
+            font-family: 'Arial', sans-serif;
+            color: #614c3d;
+        }
+
         .card {
             width: 80%;
             margin: 0 auto;
             padding: 40px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 3px;
+            background-color: #f2e8da;
         }
 
         table {
             border-collapse: collapse;
             width: 100%;
-            margin: 0 auto; /* Menengahkan tabel */
+            margin: 0 auto;
+            background-color: #fafafa;
         }
 
         th, td {
-            border: 1px solid #dddddd;
+            border: 1px solid #d9c6b9;
             text-align: left;
             padding: 8px;
+            background-color: #fff;
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #614c3d;
+            color: #fff;
         }
 
         tr:nth-child(even) {
-            background-color: #f9f9f9;
+            background-color: #f5ede2;
         }
 
-        tr:hover { /* Responsif terhadap hover */
-            background-color: #ebebeb;
+        tr:hover {
+            background-color: #ece4d9;
         }
 
         h2 {
-            color: #333333;
+            color: #614c3d;
             text-align: center;
             margin-top: 20px;
-            font-size:20;
+            font-size: 24px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        /* Ganti font menjadi Just Another Hand */
+        body, .card, th, td, h2 {
+            font-family: 'Just Another Hand', cursive;
         }
     </style>
     @endsection
