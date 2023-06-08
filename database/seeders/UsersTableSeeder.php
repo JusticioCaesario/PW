@@ -12,7 +12,7 @@ class UsersTableSeeder extends Seeder
     {
         User::create([
             'name' => 'roy',
-            'password' => Hash::make('password'),
+            'password' => Hash::make('roy'),
             'role' => 'Admin',
         ]);
     }
