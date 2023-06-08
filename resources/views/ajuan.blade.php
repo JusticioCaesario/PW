@@ -6,9 +6,9 @@
     @section('css')
     <style>
         body {
-            background-color: #f7f3e9;
+            background-color: rgba(0, 33, 71, 0.8);
             font-family: 'Sabon', serif; /* Ganti font body menjadi Sabon */
-            color: #614c3d;
+            color: rgba(0, 33, 71, 0.8);
         }
 
         .card {
@@ -17,7 +17,7 @@
             padding: 40px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 3px;
-            background-color: #f2e8da;
+            background-color: #ffffff;
         }
 
         table {
@@ -28,27 +28,27 @@
         }
 
         th, td {
-            border: 1px solid #d9c6b9;
+            border: 1px solid rgb(230, 219, 180);
             text-align: left;
             padding: 8px;
-            background-color: #fff;
+            background-color: rgba(0, 0, 0, 0.1);
         }
 
         th {
-            background-color: #614c3d;
-            color: #fff;
+            background-color: rgb(230, 219, 180);
+            color: #rgba(0, 0, 0, 0.1);
         }
 
         tr:nth-child(even) {
-            background-color: #f5ede2;
+            background-color: #rgb(230, 219, 180);
         }
 
         tr:hover {
-            background-color: #ece4d9;
+            background-color: #rgb(230, 219, 180);
         }
 
         h2 {
-            color: #614c3d;
+            color: #rgb(253, 200, 0);
             text-align: center;
             margin-top: 20px;
             font-size: 24px;
@@ -59,7 +59,7 @@
 
         /* Ganti font menjadi Just Another Hand */
         .card, th, td {
-            font-family: 'Just Another Hand', cursive;
+            font-family: 'Sabon', serif;
         }
     </style>
     @endsection

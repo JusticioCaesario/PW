@@ -93,12 +93,11 @@
   <!--for adding your content-->
 
   <!-- Add Footer Area Start -->
-  
-  <div class="card-header">
-    2023
-  </div>
-
-
+  <footer class="fixed-bottom bg-dark text-white text-center">
+    <div class="card-header">
+      2023
+    </div>
+  </footer>
   <!-- Add Footer Area End -->
 
   <!-- **** All JS Files here ***** -->

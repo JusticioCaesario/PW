@@ -9,10 +9,31 @@
     <!-- Tautan ke Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
+        body {
+            background-color: rgba(0, 33, 71, 0.8);
+            font-family: 'Sabon', serif; /* Ganti font body menjadi Sabon */
+            color: rgba(0, 33, 71, 0.8);
+        }
+        
         .card {
             margin: 0 auto;
             margin-top: 50px;
             width: 400px;
+            font-family: "Sabon", serif;
+        }
+        
+        .form-control {
+            background-color: rgb(230, 219, 180);
+        }
+        
+        .btn-primary {
+            background-color: #0d469c;
+            border-color: #0d469c;
+        }
+        
+        .btn-primary:hover {
+            background-color: #084a9c;
+            border-color: #084a9c;
         }
     </style>
     @endsection
