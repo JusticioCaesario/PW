@@ -34,6 +34,12 @@
                     </div>
                 @endif
                 <form action="/create" method="POST">
+                    @if(session('message'))
+                        <div class="alert alert-success">
+                           {{ session('message') }}
+                             </div>
+                                @endif
+
                     @csrf
                     <div class="form-group">
                         <label for="namaevent">Nama Event:</label>
