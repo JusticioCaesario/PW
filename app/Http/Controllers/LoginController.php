@@ -44,6 +44,6 @@ class LoginController extends Controller
     public function actionlogout()
     {
         Auth::logout();
-        return redirect('/login')->with('message', 'Anda telah berhasil keluar. Sampai jumpa lagi!');
+        return redirect('/')->with('message', 'Anda telah berhasil keluar. Sampai jumpa lagi!');
     }
 }
