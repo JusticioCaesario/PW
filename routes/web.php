@@ -37,6 +37,7 @@ Route::patch('calendar/update/{id}', [CalendarController::class, 'update'])->nam
 Route::delete('calendar/destroy/{id}', [CalendarController::class, 'destroy'])->name('calendar.destroy');
 //INI ROUTE TAMPIL KALENDER BBUAT HOME NNTI
 Route::get('calendar/show', [CalendarController::class, 'show'])->name('calendar.show');
+Route::get('', [CalendarController::class, 'show'])->name('calendar.show');
 
 Route::get('books', [BookController::class, 'index'])->name('books.index');
 Route::post('books', [BookController::class, 'store'])->name('books.store');
