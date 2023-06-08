@@ -30,7 +30,7 @@
     </style>
 </head>
 <body>
-    <h1>Data Forms</h1>
+    <h1>Data Ajuan</h1>
     <table>
         <thead>
             <tr>
