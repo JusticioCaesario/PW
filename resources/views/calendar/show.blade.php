@@ -1,10 +1,10 @@
 
 
+@extends('layout')
 <!DOCTYPE html>
 <html lang="en">
     
 
-@extends('layout')
 <head>
     
     <meta charset="UTF-8">

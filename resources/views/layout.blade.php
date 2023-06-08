@@ -31,24 +31,20 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
+          @auth
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="{{route('create')}}">Ajuan</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
+          @endauth
         </ul>
 
         <ul class="navbar-nav">
           @guest
           <li class="nav-item">
-            <a class="nav-link" href="login"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a class="nav-link" href="{{route('login')}}"><i class="fas fa-sign-in-alt"></i> Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="new_user"><i class="fas fa-user-plus"></i> Signup</a>
+            <a class="nav-link" href="{{route('register')}}"><i class="fas fa-user-plus"></i> Signup</a>
           </li>
           @endguest @auth
           <li class="nav-item dropdown">
@@ -56,8 +52,8 @@
               {{Auth::user()->role}}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{url('dashboard')}}"><i class="far fa-id-badge"></i></i> Profile</a>
-              <a class="dropdown-item" href="{{url('contactm')}}"><i class="fas fa-envelope-open-text"></i> Messages</a>
+              <a class="dropdown-item" href="{{url('home')}}"><i class="far fa-id-badge"></i></i> Profile</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-envelope-open-text"></i> Messages</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{route('actionlogout')}}"><i class="fas fa-sign-out-alt"></i> Logout</a>
             </div>

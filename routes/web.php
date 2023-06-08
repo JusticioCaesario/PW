@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\FormController;
 use App\Models\form;
 use Illuminate\Support\Facades\Validator;
 
@@ -56,22 +57,6 @@ Route::get('register', [RegisterController::class, 'register'])->name('register'
 Route::post('register/action', [RegisterController::class, 'actionregister'])->name('actionregister');
 
 //formajuan
-Route::get('/create',function(){
-    return view('create');
-});
 
-Route::post('/create',function(){
-    Validator::make(request()->all(),[
-        'namaevent'=>'required',
-        'deskripsi'=>'required',
-        'start_date'=>'required',
-        'end_date'=>'required'
-    ])->validate();
-    form::create([
-        'namaevent' => request('namaevent'),
-        'deskripsi' => request('deskripsi'),
-        'start_date' => request('start_date'),
-        'end_date' => request('end_date')
-    ]);
-    return redirect('/create');    
-});
+Route::get('/create', [FormController::class, 'index'])->name('create');
+Route::post('/create', [FormController::class, 'create'])->name('create');
