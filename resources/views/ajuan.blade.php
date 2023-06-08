@@ -2,7 +2,7 @@
 @extends('layout')
 <html>
 <head>
-    <title>Forms</title>
+    <title>Data Ajuan Angkatan</title>
     @section('css')
     <style>
         body {
