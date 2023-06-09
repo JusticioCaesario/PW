@@ -88,7 +88,7 @@
                     <th>Deskripsi</th>
                     <th>Tanggal Mulai</th>
                     <th>Tanggal Selesai</th>
-                    <th>Dibuat Pada</th>
+                    <th>Tanggal Pengajuan</th>
                 </tr>
             </thead>
             <tbody>
