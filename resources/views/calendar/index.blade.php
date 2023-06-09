@@ -19,7 +19,7 @@
     .calendar-container {
       max-width: 800px;
       margin: 0 auto;
-      color: aliceblue;
+      color: rgb(0, 0, 0);
     }
 
     /* Styling for the modal */
@@ -29,10 +29,8 @@
 
     /* Styling for the save button */
     #saveBtn {
-      background-color: rgb(253, 200, 0);
-      color: rgba(0, 33, 71, 0.8);
-      font-weight: bold;
-      border-color: rgb(253, 200, 0);
+      background-color: #007bff;
+      border-color: #007bff;
       transition: background-color 0.3s ease;
     }
 
@@ -84,7 +82,7 @@
 
     /* Styling for the body */
     body {
-      background-color: rgba(0, 33, 71, 0.8);
+      background-color: #ffffff;
     }
   </style>
   @endsection
@@ -245,7 +243,7 @@
     <div class="row">
       <div class="col-12">
         <h3 class="text-center mt-5">Kalender Kegiatan Mahasiswa Angkatan 2021</h3>
-        <div class="col-md-11 offset-1 mt-5 mb-5 calendar-container" style="background-color: rgba(0, 33, 71, 0.8);">
+        <div class="col-md-11 offset-1 mt-5 mb-5 calendar-container" style="background-color: #fffff;">
 
           <div id="calendar"></div>
 
