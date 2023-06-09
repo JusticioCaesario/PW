@@ -44,7 +44,7 @@
         }
 
         tr:hover {
-            background-color: #ece4d9;
+            background-color: #ffffff;
         }
 
         h2 {
@@ -58,7 +58,7 @@
 
         /* Ganti font menjadi Just Another Hand */
         body, .card, th, td, h2 {
-            font-family: 'Just Another Hand', cursive;
+            font-family: 'Arial', serif;
         }
 
         /* Ganti warna teks menjadi hitam */
@@ -66,13 +66,6 @@
             color: #000000;
         }
 
-        /* Ganti ikon kucing di header */
-        .card h2::before {
-            content: "\f6be";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            margin-right: 10px;
-        }
     </style>
     @endsection
     @section('content')
