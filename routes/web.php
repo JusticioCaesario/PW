@@ -30,11 +30,11 @@ Route::get('/users', [UserController::class, 'index'])->name('users.index');
 Route::get('/test', [UserController::class, 'test']);
 
 // Calendar routes
-
 Route::get('calendar/index', [CalendarController::class, 'index'])->name('calendar.index');
 Route::post('calendar', [CalendarController::class, 'store'])->name('calendar.store');
 Route::patch('calendar/update/{id}', [CalendarController::class, 'update'])->name('calendar.update');
 Route::delete('calendar/destroy/{id}', [CalendarController::class, 'destroy'])->name('calendar.destroy');
+
 //INI ROUTE TAMPIL KALENDER BBUAT HOME NNTI
 Route::get('calendar/show', [CalendarController::class, 'show'])->name('calendar.show');
 Route::get('', [CalendarController::class, 'show'])->name('calendar.show');
@@ -59,7 +59,6 @@ Route::get('register', [RegisterController::class, 'register'])->name('register'
 Route::post('register/action', [RegisterController::class, 'actionregister'])->name('actionregister');
 
 //formajuan
-
 Route::get('/create', [FormController::class, 'index'])->name('create');
 Route::post('/create', [FormController::class, 'create'])->name('create');
 

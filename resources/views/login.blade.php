@@ -33,10 +33,9 @@
                 <div class="form-group">
                     <label>Password</label>
                     <input type="password" name="password" class="form-control" placeholder="Password" required="">
-            
-                          
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                <a href="/" class="btn btn-primary btn-block">Masuk Sebagai Guest</a>
                 <hr>
                 <p class="text-center">Belum punya akun? <a href="register">Register</a> sekarang!</p>
             </form>
