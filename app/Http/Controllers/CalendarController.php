@@ -37,10 +37,10 @@ class CalendarController extends Controller
         $bookings = Booking::all();
         foreach($bookings as $booking) {
             $color = null;
-            if($booking->title == 'penting') {
-                $color = '##FF699A';
+            if($booking->title == 'ujian') {
+                $color = '#FF699A';
             }
-            if($booking->title == 'Test 1') {
+            if($booking->title == '.') {
                 $color = '#68B01A';
             }
 
