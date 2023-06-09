@@ -6,16 +6,16 @@
     @section('css')
     <style>
         body {
-            background-color: rgba(0, 33, 71, 0.8);
-            font-family: 'Sabon', serif; /* Ganti font body menjadi Sabon */
-            color: rgba(0, 33, 71, 0.8);
+            background-color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            color: #0e0600;
         }
 
         .card {
             width: 80%;
             margin: 0 auto;
             padding: 40px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
             border-radius: 3px;
             background-color: #ffffff;
         }
@@ -28,38 +28,50 @@
         }
 
         th, td {
-            border: 1px solid rgb(230, 219, 180);
+            border: 1px solid #000000;
             text-align: left;
             padding: 8px;
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: #fff;
         }
 
         th {
-            background-color: rgb(230, 219, 180);
-            color: #rgba(0, 0, 0, 0.1);
+            background-color: #000000;
+            color: #ffffff;
         }
 
         tr:nth-child(even) {
-            background-color: #rgb(230, 219, 180);
+            background-color: #f5ede2;
         }
 
         tr:hover {
-            background-color: #rgb(230, 219, 180);
+            background-color: #ece4d9;
         }
 
         h2 {
-            color: #rgb(253, 200, 0);
+            color: #000000;
             text-align: center;
             margin-top: 20px;
             font-size: 24px;
             letter-spacing: 1px;
             font-weight: bold;
-            font-family: 'Sabon', serif; /* Ganti font h2 menjadi Sabon */
         }
 
         /* Ganti font menjadi Just Another Hand */
-        .card, th, td {
-            font-family: 'Sabon', serif;
+        body, .card, th, td, h2 {
+            font-family: 'Just Another Hand', cursive;
+        }
+
+        /* Ganti warna teks menjadi hitam */
+        body, .card, td, h2 {
+            color: #000000;
+        }
+
+        /* Ganti ikon kucing di header */
+        .card h2::before {
+            content: "\f6be";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-right: 10px;
         }
     </style>
     @endsection
