@@ -2,13 +2,20 @@
 @extends('layout')
 <html>
 <head>
+      <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- Data Table -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.22/r-2.2.6/sc-2.0.3/sb-1.0.0/sp-1.2.1/datatables.min.css" />
+
+<!-- Font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
     <title>Forms</title>
     @section('css')
     <style>
         body {
             background-color: #ffffff;
-            font-family: 'Arial', sans-serif;
-            color: #0e0600;
         }
 
         .card {
@@ -56,23 +63,14 @@
             font-weight: bold;
         }
 
-        /* Ganti font menjadi Just Another Hand */
-        body, .card, th, td, h2 {
-            font-family: 'Just Another Hand', cursive;
-        }
+      
 
         /* Ganti warna teks menjadi hitam */
         body, .card, td, h2 {
             color: #000000;
         }
 
-        /* Ganti ikon kucing di header */
-        .card h2::before {
-            content: "\f6be";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            margin-right: 10px;
-        }
+     
     </style>
     @endsection
     @section('content')
