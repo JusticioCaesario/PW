@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
         body {
-            background-color: rgba(0, 33, 71, 0.8);
-            font-family: 'Sabon', serif; /* Ganti font body menjadi Sabon */
-            color: rgba(0, 33, 71, 0.8);
+            background-color: rgb(255, 255, 255);
+            font-family: 'Arial', sans-serif; /* Ganti font body menjadi Sabon */
+            color: #000000;
         }
         
         .card {
             margin: 0 auto;
             margin-top: 50px;
             width: 400px;
-            font-family: "Sabon", serif;
+            font-family: 'Arial', sans-serif;
         }
         
         .form-control {
-            background-color: rgb(230, 219, 180);
+            background-color: rgb(255, 255, 255);
         }
         
         .btn-primary {
