@@ -185,7 +185,7 @@
           });
         },
         eventClick: function (event) {
-          console.log(info);
+          var id = event.id;
 
           if (confirm('Are you sure want to remove it')) {
             $.ajax({
